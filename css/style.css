@@ -1,0 +1,439 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.enrollment-title {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.enrollment-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.enrollment-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.enrollment-form input, 
+.enrollment-form select, 
+.enrollment-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.enrollment-form input:focus, 
+.enrollment-form select:focus, 
+.enrollment-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.enrollment-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.enrollment-form button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enrollment-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .enrollment-form {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .enrollment-form input, 
+    .enrollment-form select, 
+    .enrollment-form textarea, 
+    .enrollment-form button {
+        font-size: 14px;
+    }
+}
+
+/* Body and Container */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+/* Basic styling for header */
+header {
+    background-color: #4a90e2;
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+/* Styling for the nav links */
+header nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #e2f3fd;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.hero button {
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.5rem;
+    border: none;
+    background-color: #4a90e2;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #357abd;
+}
+
+/* Search Section */
+.search-courses, .popular-courses, .testimonials {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.search-courses h2, .popular-courses h2, .testimonials h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.search-courses form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search-courses input[type="text"] {
+    padding: 0.5rem;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-courses button[type="submit"] {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #4a90e2;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.search-courses button[type="submit"]:hover {
+    background-color: #357abd;
+}
+
+/* Card Styles */
+.courses, .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.card button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #4a90e2;
+    background-color: #fff;
+    color: #4a90e2;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+/* Testimonials */
+.student-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.student-photo {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+}
+
+/* Footer */
+footer {
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.75rem;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #fff;
+}
+
+
+/* Card Styles */
+
+.cardformmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f7fc;
+}
+
+.cardform {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardform h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cardform p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.cardform p strong {
+    color: #333;
+}
+
+
+/* Container styling */
+.search-courses go_to_courses {
+    text-align: center;
+}
+
+/* Button styling */
+.go_to_courses a button {
+    padding: 12px 24px;
+    margin-top: 1.3rem;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5b9bd5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.go_to_courses a button:hover {
+    background-color: #4682b4;
+    transform: translateY(-2px);
+}
+
+/* Button focus effect */
+.go_to_courses a button:focus {
+    outline: 2px solid #4682b4;
+}
+
+
+.popular-courses go_to_courses {
+    text-align: center;
+}
+
+/* Button styling */
+.go_to_courses a button {
+    padding: 12px 24px;
+    margin-top: 1.3rem;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5b9bd5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.go_to_courses a button:hover {
+    background-color: #4682b4;
+    transform: translateY(-2px);
+}
+
+/* Button focus effect */
+.go_to_courses a button:focus {
+    outline: 2px solid #4682b4;
+}
+
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    margin: 1rem 0;
+}
+
+.search-form input[type="text"] {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 250px;
+    transition: border-color 0.3s;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #3a78c2;
+}

@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4a90e2;
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+/* Styling for the nav links */
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+
+
+/* About Page Layout */
+.about-page {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-hero {
+    margin-bottom: 2rem;
+    background-color: #f4f9ff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 0.5rem;
+}
+
+.about-hero p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Mission and Values */
+.about-mission, .about-values, .about-team {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-mission h2, .about-values h2, .about-team h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-values ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.about-values li {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    text-align: left;
+    color: #555;
+}
+
+.about-values strong {
+    color: #4a90e2;
+}
+
+/* Team Section */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.team-member-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 2rem);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.team-member-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-member-card h3 {
+    font-size: 1.5rem;
+    color: #4a90e2;
+    margin-bottom: 0.3rem;
+}
+
+.team-member-card p {
+    color: #555;
+    line-height: 1.4;
+}
+
+.team-member-card p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #4a90e2;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.8rem;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-member-card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 500px) {
+    .team-member-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f4f6;
+}
+
+/* Form Wrapper */
+.container {
+    width: 400px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input Styling */
+.input-group {
+    margin: 15px 0;
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #ffffff;
+    padding: 0 5px;
+    font-size: 0.8em;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #555;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+/* Button Styling */
+.button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+/* Link Styling */
+.switch-page {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.switch-page a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.switch-page a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styling for date input, if necessary */
+.input-group input[type="date"] {
+    color: #555;
+}

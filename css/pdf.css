@@ -1,0 +1,157 @@
+/* General styling for header */
+header {
+    background-color: #4a90e2;
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+/* Styling for the nav links */
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+
+
+
+/* Footer styling */
+footer {
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+footer nav {
+    display: inline-block;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.75rem;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #ffffff;
+}
+
+/* Main body and card container */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pdf-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pdf-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-card h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.pdf-card h3:hover {
+    color: #007bff;
+}
+
+.pdf-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.pdf-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.pdf-card a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    
+    .pdf-card {
+        padding: 15px;
+    }
+
+    footer p, footer nav a {
+        font-size: 0.8rem;
+    }
+}
